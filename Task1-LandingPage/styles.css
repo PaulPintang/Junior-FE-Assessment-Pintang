@@ -37,7 +37,7 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 20px;
 }
@@ -129,6 +129,44 @@ header .toggle {
 .product-container {
   height: 100vh;
   padding: 15px 0;
+}
+
+.about-container {
+  height: 100vh;
+  padding: 15px 0;
+}
+
+.about-product {
+  position: relative;
+}
+
+.about-img-container {
+  padding-top: 20px;
+}
+
+.about-img-container img {
+  width: 620px;
+  height: 100%;
+}
+
+.about-description {
+  position: absolute;
+  background-color: white;
+  width: 46%;
+  height: 70%;
+  top: 150px;
+  right: 0px;
+
+  padding: 40px;
+}
+
+.about-description h1 {
+  padding-bottom: 20px;
+}
+
+.about-description p {
+  color: gray;
+  font-weight: lighter;
 }
 
 .contact-container {
