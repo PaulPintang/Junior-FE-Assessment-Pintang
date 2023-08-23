@@ -4,11 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header-container">
-      <div class="logo"></div>
-      <div class="links-container"></div>
+    <header>
+      <div class="container">
+        <div class="flex">
+          <div class="logo">Logo</div>
+          <div class="links-container flex">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button class="get-started-btn">Get started</button>
+          </div>
+          <div class="toggle">
+            <button class="toggle-menu">
+              <img src="./assets/menu-bar.png" alt="" />
+            </button>
+            <button class="toggle-close">
+              <img src="./assets/close.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
+    <section class="hero-container"></section>
+    <section class="product-container"></section>
+    <section class="about-container"></section>
+    <section class="contact-container"></section>
   </body>
 </html>

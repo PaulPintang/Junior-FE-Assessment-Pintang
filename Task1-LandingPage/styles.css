@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+  line-height: 1.8;
+}
+
+button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+header .flex {
+  height: 80px;
+}
+
+header .links-container {
+  gap: 30px;
+}
+
+header .links-container .get-started-btn {
+  font-weight: 900;
+  color: rgb(104, 104, 104);
+  border: 1px solid black;
+  padding: 12px 30px;
+}
+
+header .toggle img {
+  width: 35px;
+}
+
+header .links-container a:hover {
+  opacity: unset;
+  transition: opacity 0.5s;
+}
+
+header .links-container .get-started-btn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.4s;
+}
+
+header .toggle {
+  display: none;
+  position: absolute;
+  right: 12px;
+  top: 22px;
+}
+
+.hero-container {
+  height: calc(100vh - 80px);
+  background-color: aliceblue;
+}
+.product-container {
+  height: 100vh;
+  background-color: aquamarine;
+}
+.about-container {
+  height: 100vh;
+  background-color: blue;
+}
+.contact-container {
+  height: 100vh;
+  background-color: red;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  header .container .flex {
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 16px;
+  }
+  header .toggle {
+    display: block;
+  }
+  header .links-container {
+    justify-content: center;
+  }
+  header .logo {
+    align-self: flex-start;
+    padding-top: 10px;
+  }
+}
