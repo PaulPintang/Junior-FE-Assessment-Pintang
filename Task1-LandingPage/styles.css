@@ -42,6 +42,17 @@ a {
   padding: 0 20px;
 }
 
+.main-btn {
+  font-weight: 900;
+  color: rgb(104, 104, 104);
+  border: 1px solid black;
+  padding: 12px 30px;
+}
+
+.main-btn:hover {
+  transition: all 0.4s;
+}
+
 header {
   background-color: white;
   position: sticky;
@@ -56,13 +67,6 @@ header .links-container {
   gap: 30px;
 }
 
-header .links-container .get-started-btn {
-  font-weight: 900;
-  color: rgb(104, 104, 104);
-  border: 1px solid black;
-  padding: 12px 30px;
-}
-
 header .toggle img {
   width: 35px;
 }
@@ -72,10 +76,9 @@ header .links-container a:hover {
   transition: opacity 0.5s;
 }
 
-header .links-container .get-started-btn:hover {
+header .main-btn:hover {
   background-color: black;
   color: white;
-  transition: all 0.4s;
 }
 
 header .toggle {
@@ -85,10 +88,37 @@ header .toggle {
   top: 22px;
 }
 
-.hero-container {
+.hero-container .flex {
   height: calc(100vh - 80px);
-  background-color: aliceblue;
 }
+
+.hero-container h1 {
+  line-height: 1.2;
+  font-size: 5rem;
+}
+
+.hero-container .hero-tagline {
+  max-width: 70%;
+}
+
+.hero-container .hero-tagline p {
+  max-width: 65%;
+  color: rgb(104, 103, 103);
+  padding: 20px 0;
+}
+
+.hero-container .hero-tagline .main-btn {
+  background-color: black;
+  color: white;
+}
+
+.hero-container .hero-tagline .main-btn:hover {
+  box-shadow: -1px -1px 192px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -1px 192px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 192px 5px rgba(0, 0, 0, 0.75);
+  background-color: rgb(49, 48, 48);
+}
+
 .product-container {
   height: 100vh;
   background-color: aquamarine;
