@@ -191,8 +191,6 @@ header .main-btn:hover,
 }
 
 .image-container .image-description {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 1.3), rgba(0, 0, 0, 0.2)); */
-
   height: max-content;
   width: max-content;
   position: absolute;
@@ -219,12 +217,11 @@ h3 {
 
 .about-container {
   height: 100vh;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .about-product {
   position: relative;
-  /* z-index: -1; */
 }
 
 .about-img-container {
@@ -336,23 +333,131 @@ textarea:focus {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
+  .page-name {
+    text-align: center;
+  }
+
+  .hero-container .hero-tagline {
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+  .hero-container .hero-tagline h1,
+  .product-container .product-tagline h1 {
+    font-size: 4.3rem;
+  }
+
+  .bikes-container {
+    height: 100%;
+  }
+
+  .bikes-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-cols-span-2 {
+    grid-column: unset;
+  }
+
+  .about-container {
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  .about-img-container img {
+    width: 100%;
+  }
+
+  .about-description {
+    position: unset;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .product-container .product-tagline p,
+  .hero-container .hero-tagline p {
+    max-width: 80%;
+    margin: auto;
+  }
+  .contact-form div {
+    gap: 15px;
+  }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
+  .page-name {
+    text-align: center;
+  }
+  header .logo {
+    align-self: flex-start;
+    padding-top: 5px;
+  }
   header .container .flex {
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 16px;
   }
   header .toggle {
     display: block;
   }
   header .links-container {
+    display: none;
     justify-content: center;
   }
-  header .logo {
-    align-self: flex-start;
-    padding-top: 10px;
+
+  .product-img-bg {
+    background-position: left;
+  }
+
+  .hero-container .hero-tagline {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-container .hero-tagline h1,
+  .product-container .product-tagline h1 {
+    font-size: 3.3rem;
+  }
+  .hero-container .hero-tagline p {
+    max-width: 100%;
+  }
+
+  .bikes-container {
+    height: 100%;
+  }
+
+  .bikes-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-span-2 {
+    grid-column: unset;
+  }
+
+  .about-container {
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  .about-img-container img {
+    width: 100%;
+  }
+
+  .about-description {
+    position: unset;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .product-container .product-tagline p,
+  .hero-container .hero-tagline p {
+    max-width: 100%;
+  }
+  .contact-form div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-container .page-name {
+    font-size: 1.7rem;
   }
 }
