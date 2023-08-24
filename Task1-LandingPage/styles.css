@@ -92,6 +92,9 @@ header .toggle img {
 }
 
 header .links-container a:hover {
+  box-shadow: -1px -1px 192px 5px rgb(255, 255, 255);
+  -webkit-box-shadow: -1px -1px 192px 5px rgb(255, 255, 255);
+  -moz-box-shadow: -1px -1px 192px 5px rgb(255, 255, 255);
   color: white;
   transition: color 0.5s;
 }
@@ -122,7 +125,8 @@ header .toggle {
   height: calc(100vh - 80px);
 }
 
-.hero-container .hero-tagline h1 {
+.hero-container .hero-tagline h1,
+.product-container .product-tagline h1 {
   font-size: 5rem;
   color: rgb(255, 255, 255);
 }
@@ -131,6 +135,7 @@ header .toggle {
   max-width: 70%;
 }
 
+.product-container .product-tagline p,
 .hero-container .hero-tagline p {
   max-width: 65%;
   /* color: rgb(104, 103, 103); */
@@ -144,16 +149,17 @@ header .toggle {
 }
 
 .hero-tagline .main-btn:hover,
-header .main-btn:hover {
+header .main-btn:hover,
+.product-tagline .main-btn:hover {
   box-shadow: -1px -1px 192px 5px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: -1px -1px 192px 5px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: -1px -1px 192px 5px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -1px -1px 192px 5px rgb(255, 255, 255);
+  -moz-box-shadow: -1px -1px 192px 5px rgb(255, 255, 255);
   background-color: white;
   color: black;
   /* background-color: rgb(49, 48, 48); */
 }
 
-.product-container {
+.product-grid-container {
   height: 100vh;
   padding: 15px 0;
 }
@@ -181,7 +187,7 @@ header .main-btn:hover {
   position: absolute;
   background-color: white;
   width: 46%;
-  height: 70%;
+  height: auto;
   top: 150px;
   right: 0px;
   padding: 40px;
@@ -195,6 +201,27 @@ header .main-btn:hover {
   color: gray;
   font-weight: lighter;
   font-family: "Karla", sans-serif;
+}
+
+.product-container {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 1.3), rgba(0, 0, 0, 0.2)),
+    url("assets/best-seller.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 2;
+}
+
+.product-container .flex {
+  height: calc(100vh - 80px);
+}
+
+.product-tagline {
+  text-align: center;
+}
+
+.product-tagline p {
+  margin: auto;
 }
 
 .contact-container {
