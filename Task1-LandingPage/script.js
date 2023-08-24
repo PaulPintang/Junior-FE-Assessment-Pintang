@@ -6,3 +6,16 @@ const readMore = () => {
     ? (toggleText.innerHTML = "Read more")
     : (toggleText.innerHTML = "See less");
 };
+
+const toggleMenu = () => {
+  nav = document.querySelector(".links-container");
+  header = document.querySelector("header");
+  flexHeight = document.querySelector(".h-full");
+  logoPosition = document.querySelector(".logo");
+  body = document.querySelector("body");
+  nav.classList.toggle("active");
+  header.classList.toggle("active");
+  flexHeight.classList.toggle("active");
+  logoPosition.classList.toggle("active");
+  body.classList.toggle("active");
+};
