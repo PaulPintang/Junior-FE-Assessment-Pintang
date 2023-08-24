@@ -1,7 +1,8 @@
-const getProducts = async () => {
-  const response = await fetch("https://fakestoreapi.com/products");
-  const data = await response.json();
-  console.log(data);
+const readMore = () => {
+  const aboutText = document.getElementById("about-text");
+  const toggleText = document.getElementById("toggle-text");
+  aboutText.classList.toggle("expand");
+  toggleText.innerHTML === "See less"
+    ? (toggleText.innerHTML = "Read more")
+    : (toggleText.innerHTML = "See less");
 };
-
-getProducts();
