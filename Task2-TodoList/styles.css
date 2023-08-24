@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+button {
+  background-color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  border: 1px solid black;
+  padding: 11px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-task input {
+  width: 100%;
+  padding: 11px 10px;
+  outline: none;
+}
+
+.add-task button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.add-task {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.todos-container {
+  padding: 20px 0;
+}
+
+.todos-container .task-todo-container {
+  padding: 10px 17px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.todos-container .todo {
+  display: flex;
+  gap: 15px;
+}
+
+.todos-container .todo input {
+  transform: scale(1.4);
+  outline: none;
+  border: 1px solid green;
+}
+
+.todos-container .action {
+  display: flex;
+  gap: 10px;
+}
+
+.todos-container .action button {
+  padding: 7px 15px;
+  width: 80px;
+}
+
+.todos-container .action .delete-btn {
+  background-color: rgb(240, 86, 86);
+}
+
+.todos-container .action .delete-btn:hover {
+  background-color: rgba(240, 86, 86, 0.538);
+}
+.todos-container .action .edit-btn {
+  background-color: rgb(56, 196, 119);
+}
+.todos-container .action .edit-btn:hover {
+  background-color: rgba(56, 196, 119, 0.483);
+}
