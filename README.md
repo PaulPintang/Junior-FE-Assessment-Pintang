@@ -9,4 +9,4 @@ Screenshot:
 Task 2 - Todo-list
 Description: A simple interactive todolist with CRUD functionality which is ability to create, read, update and delete todo. <br>
 Screenshot:
-![This is an image](/Task2-TodoList/screenshot.png.png)
+![This is an image](/Task2-TodoList/screenshot.png)
