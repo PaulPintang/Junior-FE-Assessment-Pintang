@@ -1,4 +1,4 @@
-#Junior FrontEnd Assessment
+# Junior FrontEnd Assessment
 
 Task 1 - Landingpage<br>
 Product name: Bikee. (i create my own product) <br>
